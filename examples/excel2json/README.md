@@ -20,6 +20,23 @@ docker run -v /my/path:/app/data --rm -it cubetiq/node-excel2json
 docker run -v /home/sombochea/excel2json:/app/data -e APP_NAME="EXCEL 2 JSON" -e MAPPER_FILE="./data/mapper.json" --rm -it cubetiq/node-excel2json
 ```
 
+# Mapper Config
+```json
+{
+  "data": [
+    {
+      "dataIndex": "Name",
+      "label": "Name"
+    },
+    {
+      "dataIndex": "Age",
+      "label": "Age"
+    }
+  ],
+  "configs": {}
+}
+```
+
 # Environment
 ```env
 APP_NAME=custom app name
