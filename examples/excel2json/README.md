@@ -26,4 +26,6 @@ APP_NAME=custom app name
 INPUT_FILE=./data/mydata.json
 OUTPUT_PATH=./data/outputs
 MAPPER_FILE=./data/mapper.json
+SHEET_NAME=Sheet1
+ENCODING=utf-8
 ```

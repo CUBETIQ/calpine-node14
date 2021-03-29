@@ -8,11 +8,13 @@ console.log("App Name =>", NAME);
 const INPUT_FILE = process.env.INPUT_FILE || "./data/people.xlsx";
 const OUTPUT_PATH = process.env.OUTPUT_PATH || "./data/outputs";
 const MAPPER_FILE = process.env.MAPPER_FILE || "./data/mapper.json";
+const SHEET_NAME = process.env.SHEET_NAME || "Sheet1"
+const ENCODING = process.env.ENCODING || "utf-8"
 
 // get mapper in string
 const mapperString = fs.readFileSync(
   MAPPER_FILE,
-  { encoding: "utf-8" },
+  { encoding: ENCODING },
   (err) => {
     if (err) throw err;
     console.log("Load file suceed =>", MAPPER_FILE);
@@ -25,7 +27,7 @@ const columsData = mapperJson.data;
 
 // read workbook from excel file
 const wb = XLSX.readFile(INPUT_FILE);
-const xlData = XLSX.utils.sheet_to_json(wb.Sheets["Sheet1"]);
+const xlData = XLSX.utils.sheet_to_json(wb.Sheets[SHEET_NAME]);
 
 // mapping the data from read excel file
 const data = xlData.map((row) => {
