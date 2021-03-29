@@ -1,4 +1,4 @@
-DOCKER_IMAGE=cubetiq/node-sayHello
+DOCKER_IMAGE=cubetiq/node-sayhello
 
 build:
 	@echo "Building docker image..."
@@ -8,4 +8,4 @@ run:
 	@echo "Running container..."
 	docker run --rm -t ${DOCKER_IMAGE}
 
-.PHONY: build run
+.PHONY: build
