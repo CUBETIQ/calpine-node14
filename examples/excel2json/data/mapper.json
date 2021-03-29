@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "dataIndex": "Name",
+      "label": "Name"
+    },
+    {
+      "dataIndex": "Age",
+      "label": "Age"
+    }
+  ],
+  "configs": {}
+}
