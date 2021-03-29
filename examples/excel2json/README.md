@@ -42,7 +42,8 @@ docker run -v /home/sombochea/excel2json:/app/data -e APP_NAME="EXCEL 2 JSON" -e
   "configs": {
     "outputPath": "./data/outputs/exported",
     "outputName": "my_exported_data",
-    "sheetName": "Sheet1"
+    "sheetName": "Sheet1",
+    "saveToOutput": true
   }
 }
 ```

@@ -12,6 +12,7 @@
   "configs": {
     "outputPath": "./data/outputs/exported",
     "outputName": "my_exported_data",
-    "sheetName": "Sheet1"
+    "sheetName": "Sheet1",
+    "saveToOutput": true
   }
 }
