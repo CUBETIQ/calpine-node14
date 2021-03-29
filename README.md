@@ -2,6 +2,16 @@
 - CUBETIQ Alpine OS Linux (3.13.3)
 - Nodejs 14 (14.16.0)
 
+# [Docker Hub](https://hub.docker.com/r/cubetiq/calpine-node)
+```shell
+docker push cubetiq/calpine-node:14
+```
+
+# Usage
+```shell
+docker run --rm -it cubetiq/calpine-node:14 /bin/sh
+```
+
 # Contributors
 - Sambo Chea <sombochea@cubetiqs.com>
 

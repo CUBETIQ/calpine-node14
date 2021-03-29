@@ -101,6 +101,8 @@ RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
 
 COPY entrypoint.sh /usr/local/bin/
 
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
 ENTRYPOINT ["entrypoint.sh"]
 
 CMD [ "node" ]
