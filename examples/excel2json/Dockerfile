@@ -1,6 +1,8 @@
 FROM cubetiq/calpine-node:latest
 LABEL maintainer="sombochea@cubetiqs.com"
 
+VOLUME [ "/data" ]
+
 ENV INPUT_FILE './data/people.xlsx'
 ENV OUTPUT_PATH './data/outputs'
 ENV MAPPER_FILE './data/mapper.json'
