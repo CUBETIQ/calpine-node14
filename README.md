@@ -15,6 +15,20 @@ docker push cubetiq/calpine-node:14
 docker run --rm -it cubetiq/calpine-node:14 /bin/sh
 ```
 
+# Example
+```Dockerfile
+FROM cubetiq/calpine-node:latest
+LABEL maintainer="sombochea@cubetiqs.com"
+
+WORKDIR /usr/src/app
+
+COPY . /usr/src/app
+
+RUN yarn
+
+CMD [ "node" , "index.js"]
+```
+
 # Contributors
 - Sambo Chea <sombochea@cubetiqs.com>
 
