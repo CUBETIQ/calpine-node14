@@ -1,17 +1,22 @@
-# Excel 2 Json
+# excel2json
+
 - Read file excel to json
-- Custom mapping with custom columns
+- Custom mapping with custom columns and configs
 
 # Build
+
 ```shell
 bash build
 ```
+
 OR
+
 ```shell
 make build run
 ```
 
 # Example
+
 ```shell
 docker run -v /my/path:/app/data --rm -it cubetiq/node-excel2json
 ```
@@ -21,6 +26,7 @@ docker run -v /home/sombochea/excel2json:/app/data -e APP_NAME="EXCEL 2 JSON" -e
 ```
 
 # Mapper Config
+
 ```json
 {
   "data": [
@@ -33,11 +39,16 @@ docker run -v /home/sombochea/excel2json:/app/data -e APP_NAME="EXCEL 2 JSON" -e
       "label": "Age"
     }
   ],
-  "configs": {}
+  "configs": {
+    "outputPath": "./data/outputs/exported",
+    "outputName": "my_exported_data",
+    "sheetName": "Sheet1"
+  }
 }
 ```
 
 # Environment
+
 ```env
 APP_NAME=custom app name
 INPUT_FILE=./data/mydata.xlsx

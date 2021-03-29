@@ -9,5 +9,9 @@
       "label": "Age"
     }
   ],
-  "configs": {}
+  "configs": {
+    "outputPath": "./data/outputs/exported",
+    "outputName": "my_exported_data",
+    "sheetName": "Sheet1"
+  }
 }
