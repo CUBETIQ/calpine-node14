@@ -1,4 +1,7 @@
 # CUBETIQ Alpine OS Linux with Nodejs 14
+![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cubetiq/calpine-node)
+![Docker Pulls](https://img.shields.io/docker/pulls/cubetiq/calpine-node)
+
 - CUBETIQ Alpine OS Linux (3.13.3)
 - Nodejs 14 (14.16.0)
 
