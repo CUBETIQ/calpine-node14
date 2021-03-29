@@ -1,15 +1,15 @@
 FROM cubetiq/calpine-node:latest
 LABEL maintainer="sombochea@cubetiqs.com"
 
-VOLUME [ "/data" ]
+VOLUME [ "/app/data" ]
 
 ENV INPUT_FILE './data/people.xlsx'
 ENV OUTPUT_PATH './data/outputs'
 ENV MAPPER_FILE './data/mapper.json'
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY . /usr/src/app
+COPY . /app
 
 RUN yarn
 
