@@ -1,12 +1,14 @@
 FROM cubetiq/calpine-os-linux:latest
 LABEL maintainer="sombochea@cubetiqs.com"
 
+# Build with root access
 USER root
 
 ENV NODE_VERSION 14.16.0
+ENV USER_UID 1001
 
-RUN addgroup -g 1000 node \
-    && adduser -u 1000 -G node -s /bin/sh -D node \
+RUN addgroup -g ${USER_UID} node \
+    && adduser -u ${USER_UID} -G node -s /bin/sh -D node \
     && apk add --no-cache \
         libstdc++ \
     && apk add --no-cache --virtual .build-deps \
