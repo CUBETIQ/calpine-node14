@@ -23,7 +23,7 @@ docker run -v /home/sombochea/excel2json:/app/data -e APP_NAME="EXCEL 2 JSON" -e
 # Environment
 ```env
 APP_NAME=custom app name
-INPUT_FILE=./data/mydata.json
+INPUT_FILE=./data/mydata.xlsx
 OUTPUT_PATH=./data/outputs
 MAPPER_FILE=./data/mapper.json
 SHEET_NAME=Sheet1
