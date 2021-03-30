@@ -1,7 +1,7 @@
 {
   "name": "excel2json",
   "version": "1.0.0",
-  "description": "",
+  "description": "Excel to json",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
