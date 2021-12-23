@@ -1,18 +1,19 @@
-# CUBETIQ Alpine OS Linux with Nodejs 14
+# CUBETIQ Alpine OS Linux with Nodejs 16
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cubetiq/calpine-node)
 ![Docker Pulls](https://img.shields.io/docker/pulls/cubetiq/calpine-node)
 
 - CUBETIQ Alpine OS Linux (3.13.3)
-- Nodejs 14 (14.16.0)
+- Nodejs 16 (16.5.0)
+- Yarn 1.22.15
 
 # [Docker Hub](https://hub.docker.com/r/cubetiq/calpine-node)
 ```shell
-docker push cubetiq/calpine-node:14
+docker push cubetiq/calpine-node:latest
 ```
 
 # Usage
 ```shell
-docker run --rm -it cubetiq/calpine-node:14 /bin/sh
+docker run --rm -it cubetiq/calpine-node:latest /bin/sh
 ```
 
 # Example

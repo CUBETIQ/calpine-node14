@@ -1,5 +1,5 @@
 DOCKER_IMAGE=cubetiq/calpine-node
-DOCKER_IMAGE_NAME=${DOCKER_IMAGE}:14
+DOCKER_IMAGE_NAME=${DOCKER_IMAGE}:16
 
 build:
 	@echo 'Starting docker build'
