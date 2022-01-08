@@ -4,7 +4,8 @@ LABEL maintainer="sombochea@cubetiqs.com"
 # Build with root access
 USER root
 
-ENV NODE_VERSION 16.5.0
+ENV NODE_VERSION 16.13.1
+ENV NODE_SHA256 3b4c47e5554fa466651a767691fc76c09b6a514b49d79bbd0061e549614adedf
 ENV USER_UID 1001
 
 RUN addgroup -g ${USER_UID} node \
@@ -17,7 +18,7 @@ RUN addgroup -g ${USER_UID} node \
       && case "${alpineArch##*-}" in \
         x86_64) \
           ARCH='x64' \
-          CHECKSUM="64c1063a622e9620209b6081310036c7b48a4ee9a342dfbb9d015f1781f1444e" \
+          CHECKSUM=$NODE_SHA256 \
           ;; \
         *) ;; \
       esac \
@@ -79,7 +80,7 @@ RUN addgroup -g ${USER_UID} node \
   && node --version \
   && npm --version
 
-ENV YARN_VERSION 1.22.15
+ENV YARN_VERSION 1.22.17
 
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
   && for key in \

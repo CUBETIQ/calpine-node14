@@ -3,8 +3,8 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/cubetiq/calpine-node)
 
 - CUBETIQ Alpine OS Linux (3.13.3)
-- Nodejs 16 (16.5.0)
-- Yarn 1.22.15
+- Nodejs 16 (16.13.1)
+- Yarn 1.22.17
 
 # [Docker Hub](https://hub.docker.com/r/cubetiq/calpine-node)
 ```shell
