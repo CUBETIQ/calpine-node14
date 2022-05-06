@@ -4,8 +4,8 @@ LABEL maintainer="sombochea@cubetiqs.com"
 # Build with root access
 USER root
 
-ENV NODE_VERSION 16.13.1
-ENV NODE_SHA256 3b4c47e5554fa466651a767691fc76c09b6a514b49d79bbd0061e549614adedf
+ENV NODE_VERSION 16.15.0
+ENV NODE_SHA256 4db62cabc0647fc18f537ed10b5573f3c23ffb4d4434e40713e7e472f1ed4e55
 ENV USER_UID 1001
 
 RUN addgroup -g ${USER_UID} node \
@@ -80,7 +80,7 @@ RUN addgroup -g ${USER_UID} node \
   && node --version \
   && npm --version
 
-ENV YARN_VERSION 1.22.17
+ENV YARN_VERSION 1.22.18
 
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
   && for key in \

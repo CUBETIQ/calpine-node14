@@ -1,4 +1,5 @@
 DOCKER_IMAGE=cubetiq/calpine-node
+DOCKER_IMAGE_GIT=cubetiq/calpine-node-git
 DOCKER_IMAGE_NAME=${DOCKER_IMAGE}:16
 
 build:
@@ -9,5 +10,11 @@ build:
 	docker tag ${DOCKER_IMAGE} ${DOCKER_IMAGE_NAME}
 	docker push ${DOCKER_IMAGE}
 	docker push ${DOCKER_IMAGE_NAME}
+
+	@echo 'Starting docker build with git'
+	docker build -f Dockfile.git . -t ${DOCKER_IMAGE}
+
+	@echo 'Starting docker push with git'
+	docker push ${DOCKER_IMAGE_GIT}
 
 .PHONY:build
