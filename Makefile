@@ -12,7 +12,7 @@ build:
 	docker push ${DOCKER_IMAGE_NAME}
 
 	@echo 'Starting docker build with git'
-	docker build -f Dockerfile.git . -t ${DOCKER_IMAGE}
+	docker build -f Dockerfile.git . -t ${DOCKER_IMAGE_GIT}
 
 	@echo 'Starting docker push with git'
 	docker push ${DOCKER_IMAGE_GIT}
