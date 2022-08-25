@@ -18,3 +18,13 @@ build:
 	docker push ${DOCKER_IMAGE_GIT}
 
 .PHONY:build
+
+test:
+	@echo 'Starting docker build'
+	docker build . -t ${DOCKER_IMAGE}
+	@echo 'Starting docker run'
+	docker run --rm -it ${DOCKER_IMAGE} --version
+	@echo 'Starting docker run with git'
+	docker run --rm -it ${DOCKER_IMAGE_GIT} --version
+
+.PHONY:test

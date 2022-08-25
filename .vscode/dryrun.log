@@ -1,0 +1,14 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/mnt/data/projects/calpine-node'
+echo 'Starting docker build'
+docker build . -t cubetiq/calpine-node
+echo 'Starting docker push'
+docker tag cubetiq/calpine-node cubetiq/calpine-node:16
+docker push cubetiq/calpine-node
+docker push cubetiq/calpine-node:16
+echo 'Starting docker build with git'
+docker build -f Dockerfile.git . -t cubetiq/calpine-node-git
+echo 'Starting docker push with git'
+docker push cubetiq/calpine-node-git
+make: Leaving directory '/mnt/data/projects/calpine-node'
+ 

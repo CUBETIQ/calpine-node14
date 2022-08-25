@@ -1,0 +1,457 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Aug 25 11:16:00 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+PROVIDE_FULLSTACK_ACTION = true
+# environment
+XDG_SESSION_CLASS = user
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+TEAMSFX_DEPLOY_MANIFEST = true
+# environment
+NVM_INC = /home/sombochea/.nvm/versions/node/v16.15.1/include/node
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+GRADLE_HOME = /home/sombochea/.sdkman/candidates/gradle/current
+# environment
+IM_CONFIG_PHASE = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /mnt/data/projects/calpine-node
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/105
+# environment
+VTE_VERSION = 6003
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+JOURNAL_STREAM = 8:62173
+# environment
+TEAMSFX_YO_ENV_CHECKER_ENABLE = true
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# environment
+MAVEN_HOME = /home/sombochea/.sdkman/candidates/maven/current
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+JAVA_HOME = /home/sombochea/.sdkman/candidates/java/current
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+USERNAME = sombochea
+# environment
+MAKELEVEL := 0
+# environment
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/home/sombochea/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+INFOPATH = /home/linuxbrew/.linuxbrew/share/info:
+# environment
+TEAMSFX_AAD_MANIFEST = true
+# environment
+MANAGERPID = 2014
+# environment
+LC_NAME = km_KH
+# environment
+VSCODE_CWD = /mnt/data/projects/calpine-node
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/105/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/sombochea/.bun/bin:/home/sombochea/.yarn/bin:/home/sombochea/.config/yarn/global/node_modules/.bin:/home/sombochea/.local/share/pnpm:/home/sombochea/.nvm/versions/node/v16.15.1/bin:/home/sombochea/.sdkman/candidates/maven/current/bin:/home/sombochea/.sdkman/candidates/java/current/bin:/home/sombochea/.sdkman/candidates/gradle/current/bin:/home/sombochea/.deno/bin:/home/sombochea/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/sombochea/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/sombochea/Downloads/flutter/bin/:/home/sombochea/go/bin/:/home/sombochea/.dotnet/tools:/home/sombochea/Downloads/arachni-1.5.1-0.5.12/bin
+# environment
+FLUTTER_PATH = /home/sombochea/Downloads/flutter/bin/
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+GOLANG_EXECUTABLE = go
+# environment
+SESSION_MANAGER = local/presenter:@/tmp/.ICE-unix/2519,unix/presenter:/tmp/.ICE-unix/2519
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/sombochea/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# makefile (from 'Makefile', line 1)
+DOCKER_IMAGE = cubetiq/calpine-node
+# environment
+SNAP = /snap/code/105
+# environment
+SDKMAN_DIR = /home/sombochea/.sdkman
+# environment
+PNPM_HOME = /home/sombochea/.local/share/pnpm
+# environment
+SDKMAN_CANDIDATES_API = https://api.sdkman.io/2
+# environment
+UBUNTU_MENUPROXY = 1
+# environment
+NVM_BIN = /home/sombochea/.nvm/versions/node/v16.15.1/bin
+# environment
+SNAP_VERSION = e4503b30
+# environment
+GO_PATH = /home/sombochea/go/bin/
+# environment
+SDKMAN_PLATFORM = linuxx64
+# environment
+DISABLE_WAYLAND = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = cd2e8cd03491404481c42fbc052ab810
+# environment
+KUBECONFIG = :/home/sombochea/.kube/config
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/105/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+UUID = 6dd7323e-22a1-4140-9a2c-d704660231b5
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 7868
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /mnt/data/projects/calpine-node
+# environment
+QT_QPA_PLATFORMTHEME = qt5ct
+# environment
+DOTNET_ROOT = /snap/dotnet-sdk/current
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 2473
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+DRONE_TOKEN = YSPhpNVp1BgxOrR2rD6jsQTkZHgGtS35
+# environment
+GTK_MODULES = gail:atk-bridge:appmenu-gtk-module
+# environment
+MANPATH = /home/sombochea/.nvm/versions/node/v16.15.1/share/man:/home/linuxbrew/.linuxbrew/share/man:
+# environment
+DRONE_SERVER = https://dci.osa.cubetiqs.com
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/sombochea
+# environment
+HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/sombochea/.config/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = sombochea
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = 3JI_yM677tmHD5XGlxNqSMrUcRaea-6cE-cIUgrtd8hvru5aiN_V
+# environment
+NVM_CD_FLAGS = -q
+# automatic
++F = $(notdir $+)
+# environment
+TELEMETRY_ID = e27ad7ff-76e8-4542-8ca5-85ca2265c4dd
+# environment
+ZSH = /home/sombochea/.oh-my-zsh
+# environment
+SNAP_USER_COMMON = /home/sombochea/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LC_TIME = km_KH
+# environment
+SNAP_REAL_HOME = /home/sombochea
+# environment
+SDKMAN_VERSION = 5.14.1
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/sombochea/snap/code/105
+# environment
+SHLVL = 1
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = sombochea
+# environment
+SNAP_REVISION = 105
+# environment
+LC_MONETARY = km_KH
+# makefile
+.DEFAULT_GOAL := build
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+THREE_SCALE_USER_TOKEN = 207c527cfc2a6b8dcf4fa43ad7a976da
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
+# environment
+TEAMSFX_BICEP_ENV_CHECKER_ENABLE = true
+# environment
+BOT_NOTIFICATION_ENABLED = true
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = km_KH
+# default
+MAKE_COMMAND := make
+# environment
+UTM_SOURCE = vscode
+# environment
+TEAMSFX_API_CONNECT_ENABLE = true
+# environment
+OLDPWD = /mnt/data/projects
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-23a21424-1.70.2-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+ 
+# environment
+BUN_INSTALL = /home/sombochea/.bun
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /home/sombochea/.nvm
+# environment
+HOMEBREW_PREFIX = /home/linuxbrew/.linuxbrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+RECOMMENDER_API_URL = https://gw.api.openshift.io//api/v2
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = km_KH
+# environment
+NO_AT_BRIDGE = 1
+# environment
+LC_IDENTIFICATION = km_KH
+# environment
+DENO_INSTALL = /home/sombochea/.deno
+# environment
+HOMEBREW_REPOSITORY = /home/linuxbrew/.linuxbrew/Homebrew
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = 3JI_yM677tmHD5XGlxNqSMrUcRaea-6cE-cIUgrtd8hvru5aiN_V
+# environment
+LC_NUMERIC = km_KH
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 2)
+DOCKER_IMAGE_GIT = cubetiq/calpine-node-git
+# environment
+LC_MEASUREMENT = km_KH
+# environment
+SNAP_NAME = code
+# environment
+SDKMAN_CANDIDATES_DIR = /home/sombochea/.sdkman/candidates
+# environment
+PAGER = less
+# makefile (from 'Makefile', line 3)
+DOCKER_IMAGE_NAME = ${DOCKER_IMAGE}:16
+# environment
+LC_ALL = C
+# environment
+ARACHNI_WEB_PATH = /home/sombochea/Downloads/arachni-1.5.1-0.5.12/bin
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/d9d34e9d_1d56_4d12_89e3_6ad2ded203ce
+# automatic
+^F = $(notdir $^)
+# environment
+TEAMSFX_GENERATOR_ENV_CHECKER_ENABLE = true
+# environment
+GNOME_TERMINAL_SERVICE = :1.91
+# default
+SUFFIXES := 
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+TEAMSFX_M365_APP = true
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = km_KH
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 7913
+# variable set hash-table stats:
+# Load=182/1024=18%, Rehash=0, Collisions=31/207=15%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2065, inode 29365737): 13 files, no impossibilities.
+
+# 13 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: build
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 10:45:12.195781556
+#  File has been updated.
+#  Successfully updated.
+
+build:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 6):
+	@echo 'Starting docker build'
+	docker build . -t ${DOCKER_IMAGE}
+	@echo 'Starting docker push'
+	docker tag ${DOCKER_IMAGE} ${DOCKER_IMAGE_NAME}
+	docker push ${DOCKER_IMAGE}
+	docker push ${DOCKER_IMAGE_NAME}
+	@echo 'Starting docker build with git'
+	docker build -f Dockerfile.git . -t ${DOCKER_IMAGE_GIT}
+	@echo 'Starting docker push with git'
+	docker push ${DOCKER_IMAGE_GIT}
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 20 / storage = 181 B / avg = 9 B
+# current buf: size = 8162 B / used = 181 B / count = 20 / avg = 9 B
+
+# strcache performance: lookups = 27 / hit rate = 25%
+# hash-table stats:
+# Load=20/8192=0%, Rehash=0, Collisions=1/27=4%
+# Finished Make data base on Thu Aug 25 11:16:00 2022
+
+ 
