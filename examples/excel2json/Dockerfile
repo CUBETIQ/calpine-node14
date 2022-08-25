@@ -11,6 +11,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN yarn
+RUN pnpm install
 
 CMD [ "node" , "index.js"]

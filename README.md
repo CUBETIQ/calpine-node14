@@ -3,9 +3,9 @@
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cubetiq/calpine-node)
 ![Docker Pulls](https://img.shields.io/docker/pulls/cubetiq/calpine-node)
 
-- CUBETIQ Alpine OS Linux
-- Nodejs 16 (16.15.0)
-- Yarn 1.22.18
+-   CUBETIQ Alpine OS Linux
+-   Nodejs 16 (16.17.0)
+-   PNPM 7 (7.9.5)
 
 # [Docker Hub](https://hub.docker.com/r/cubetiq/calpine-node)
 
@@ -29,14 +29,14 @@ WORKDIR /usr/src/app
 
 COPY . /usr/src/app
 
-RUN yarn
+RUN pnpm install
 
 CMD [ "node" , "index.js"]
 ```
 
 # Contributors
 
-- Sambo Chea <sombochea@cubetiqs.com>
+-   Sambo Chea <sombochea@cubetiqs.com>
 
 # License
 
