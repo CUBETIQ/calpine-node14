@@ -86,10 +86,14 @@ RUN echo "Installing PNPM version: $PNPM_VERSION" && \
   curl -fsSL "https://github.com/pnpm/pnpm/releases/download/v${PNPM_VERSION}/pnpm-linuxstatic-x64" -o /bin/pnpm && chmod +x /bin/pnpm && \
   apk del curl
 
+# Install yarn from npm package
+RUN npm -g i yarn
+
 # Checking packages version
 RUN echo "NODE: $(node --version)" \
   && echo "NPM: $(npm --version)" \
   && echo "NPX: $(npx --version)" \
+  && echo "YARN: $(yarn --version)" \
   && echo "PNPM: $(pnpm --version)"
 
 COPY entrypoint.sh /usr/local/bin/
