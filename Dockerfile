@@ -4,8 +4,8 @@ LABEL maintainer="sombochea@cubetiqs.com"
 # Build with root access
 USER root
 
-ENV NODE_VERSION 16.17.0
-ENV NODE_SHA256 6c94de8608fcd5b992f5f804c2d03bc3a7f422426760b1b80ea4ced486a694fe
+ENV NODE_VERSION 16.17.1
+ENV NODE_SHA256 58118370085f0fb1a6a66cc5562d0c341e560ac9c4d0311307b671283b7f5671
 ENV USER_UID 1001
 
 RUN addgroup -g ${USER_UID} node \
@@ -77,7 +77,7 @@ RUN addgroup -g ${USER_UID} node \
   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" \
   && apk del .build-deps
 
-ARG PNPM_VERSION=7.9.5
+ARG PNPM_VERSION=7.12.2
 ENV PNPM_HOME=/root/.local/share/pnpm
 ENV PATH=$PATH:$PNPM_HOME
 
