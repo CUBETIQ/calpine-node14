@@ -77,7 +77,7 @@ RUN addgroup -g ${USER_UID} node \
   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" \
   && apk del .build-deps
 
-ARG PNPM_VERSION=7.15.0
+ARG PNPM_VERSION=7.16.0
 ENV PNPM_HOME=/root/.local/share/pnpm
 ENV PATH=$PATH:$PNPM_HOME
 
