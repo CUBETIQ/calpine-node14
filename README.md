@@ -4,8 +4,8 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/cubetiq/calpine-node)
 
 -   CUBETIQ Alpine OS Linux (Latest)
--   Nodejs 16 (16.17.1)
--   PNPM 7 (7.19.0)
+-   Nodejs 16 (16.19.0)
+-   PNPM 7 (7.20.0)
 
 # [Docker Hub](https://hub.docker.com/r/cubetiq/calpine-node)
 

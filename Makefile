@@ -3,6 +3,12 @@ DOCKER_IMAGE_GIT=cubetiq/calpine-node-git
 DOCKER_IMAGE_NAME=${DOCKER_IMAGE}:16
 
 build:
+	@echo 'Starting docker build with slim'
+	docker build -f Dockerfile.slim . -t ${DOCKER_IMAGE}:slim
+
+	@echo 'Starting docker push with slim'
+	docker push ${DOCKER_IMAGE}:slim
+
 	@echo 'Starting docker build'
 	docker build . -t ${DOCKER_IMAGE}
 
@@ -20,10 +26,18 @@ build:
 .PHONY:build
 
 test:
+	@echo 'Starting docker build with slim'
+	docker build -f Dockerfile.slim . -t ${DOCKER_IMAGE}:slim
+
 	@echo 'Starting docker build'
 	docker build . -t ${DOCKER_IMAGE}
+
+	@echo 'Starting docker run with slim'
+	docker run --rm -it ${DOCKER_IMAGE}:slim --version
+
 	@echo 'Starting docker run'
 	docker run --rm -it ${DOCKER_IMAGE} --version
+
 	@echo 'Starting docker run with git'
 	docker run --rm -it ${DOCKER_IMAGE_GIT} --version
 
