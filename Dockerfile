@@ -2,7 +2,7 @@ FROM cubetiq/calpine-node:slim
 LABEL maintainer="sombochea@cubetiqs.com"
 
 # Install PNPM
-ARG PNPM_VERSION=7.26.0
+ARG PNPM_VERSION=7.26.3
 ENV PNPM_HOME=/root/.local/share/pnpm
 ENV PATH=$PATH:$PNPM_HOME
 
@@ -11,8 +11,11 @@ RUN echo "Installing PNPM version: $PNPM_VERSION" && \
   curl -fsSL "https://github.com/pnpm/pnpm/releases/download/v${PNPM_VERSION}/pnpm-linuxstatic-x64" -o /bin/pnpm && chmod +x /bin/pnpm && \
   apk del curl
 
+# Update NPM package
+RUN npm install -g npm@latest
+
 # Install yarn from npm package
-RUN npm -g i yarn
+RUN npm -g i yarn@latest
 
 # Checking packages version
 RUN echo "NODE: $(node --version)" \

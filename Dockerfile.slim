@@ -77,6 +77,9 @@ RUN addgroup -g ${USER_UID} node \
   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" \
   && apk del .build-deps
 
+# Update NPM package
+RUN npm install -g npm@latest
+
 # Checking packages version
 RUN echo "NODE: $(node --version)" \
   && echo "NPM: $(npm --version)" \
