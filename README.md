@@ -1,10 +1,10 @@
-# CUBETIQ Alpine OS Linux with Nodejs 16
+# CUBETIQ Alpine OS Linux with Nodejs 18
 
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cubetiq/calpine-node)
 ![Docker Pulls](https://img.shields.io/docker/pulls/cubetiq/calpine-node)
 
 -   CUBETIQ Alpine OS Linux (Latest)
--   Nodejs 16 (16.19.0)
+-   Nodejs 18
 -   PNPM 8 (8.1.0)
 
 # [Docker Hub](https://hub.docker.com/r/cubetiq/calpine-node)

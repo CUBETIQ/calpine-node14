@@ -1,6 +1,6 @@
 DOCKER_IMAGE=cubetiq/calpine-node
 DOCKER_IMAGE_GIT=cubetiq/calpine-node-git
-DOCKER_IMAGE_NAME=${DOCKER_IMAGE}:16
+DOCKER_IMAGE_NAME=${DOCKER_IMAGE}:18
 
 build:
 	@echo 'Starting docker build with slim'
