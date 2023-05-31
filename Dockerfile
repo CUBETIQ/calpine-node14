@@ -2,7 +2,7 @@ FROM cubetiq/calpine-node:slim
 LABEL maintainer="sombochea@cubetiqs.com"
 
 # Install PNPM
-ARG PNPM_VERSION=8.5.1
+ARG PNPM_VERSION=8.6.0
 ENV PNPM_HOME=/root/.local/share/pnpm
 ENV PATH=$PATH:$PNPM_HOME
 
