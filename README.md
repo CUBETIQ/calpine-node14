@@ -5,7 +5,7 @@
 
 -   CUBETIQ Alpine OS Linux (Latest)
 -   Nodejs 18
--   PNPM 8 (8.6.3)
+-   PNPM 8 (8.6.6)
 
 # [Docker Hub](https://hub.docker.com/r/cubetiq/calpine-node)
 
